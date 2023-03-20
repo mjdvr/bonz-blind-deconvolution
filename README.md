@@ -40,3 +40,5 @@ conda env create -f environment.yml
 ```
 
 Note that the name of the environment is defined in the `environment.yml` as "`tf`". If another environment of the same name already exists, one may feel free to modify the name as states in the `.yml` file to any name of the users choosing.
+
+After succesfull creation of the environment, the user is encouraged to run the code from within the correcty environment in the Jupyter notebook compatible devlopment software of their choosing.
