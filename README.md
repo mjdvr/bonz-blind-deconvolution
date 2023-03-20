@@ -25,9 +25,15 @@ python -m tensorboard.main --logdir=logs/
 In the code example above `--logdir=logs/` may be changed to the desired log-file directory as: `--logdir={directory}`, replacing `{directory}` with the directory of choice. In case the instructions are unclear, the user may resort to the official documentation of the TensorBoard at [tensorflow.org/tensorboard](https://www.tensorflow.org/tensorboard).
 
 ## Installation
-Note: to run this program in exactly the same manner as the original version, the user must install python version 3.9.15 with all required packages.
+To copy this repository for easy installation, the user is encouraged to install and use `git`, which may be acquired at [git-scm.com/downloads](https://git-scm.com/downloads). After installing this software, the user may then run the following command from their terminal in the desired location in their file structure:
+```
+git clone https://github.com/mjdvr/bonz-blind-deconvolution.git
+```
+For ease of use, and congruency with the rest of this README file, the user is furthermore encouraged to install and make use of the `conda` package manager for python, which may be installed following the instructions at [docs.conda.io](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Assuming an at least slightly experienced target audience, the environment used can easily be installed using the following command:
+After succesfully installing both git, cloning this repository and installing conda, the user may then proceed to cloning the environment used in the development of the code. Note: to run this program in exactly the same manner as the original version, the user must install python version 3.9.15 with all required packages.
+
+Assuming that the user has succesfully installed, and is familiar with the usage of, `conda`, the following command may be run to create an exact copy of the development environment required to run the code as supplied.
 
 ```
 conda env create -f environment.yml
