@@ -18,6 +18,7 @@ Tip: when investigating or experimenting with the machine learning methods, it i
 
 Tip: when, in some cases, the users machine runs into issues as related to available memory (RAM or VRAM), smaller datasets or smaller batches in training may be used to alleviate some of the strain placed on the users system. This may then allow the user to perform training and predictions which otherwise would be too resource demanding, especially in the case of high-resolution images in the trainig and testing dataset.
 
+## Installation
 Note: to run this program in exactly the same manner as the original version, the user must install python version 3.9.15 with all required packages.
 
 Assuming an at least slightly experienced target audience, the environment used can easily be installed using the following command:
