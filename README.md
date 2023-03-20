@@ -18,6 +18,12 @@ Tip: when investigating or experimenting with the machine learning methods, it i
 
 Tip: when, in some cases, the users machine runs into issues as related to available memory (RAM or VRAM), smaller datasets or smaller batches in training may be used to alleviate some of the strain placed on the users system. This may then allow the user to perform training and predictions which otherwise would be too resource demanding, especially in the case of high-resolution images in the trainig and testing dataset.
 
+Tip: as stated in the `main.ipynb` code file, the `opentensorboard.bat` simply contains some code to open the TensorBoard dashboard using the correct log-file directory. If the user feels wary of running this file even after inspection, the following code may be run from the terminal after logging some machine learning training sessions:
+```
+python -m tensorboard.main --logdir=logs/
+```
+In the code example above `--logdir=logs/` may be changed to the desired log-file directory as: `--logdir={directory}`, replacing `{directory}` with the directory of choice. In case the instructions are unclear, the user may resort to the official documentation of the TensorBoard at [tensorflow.org/tensorboard](https://www.tensorflow.org/tensorboard).
+
 ## Installation
 Note: to run this program in exactly the same manner as the original version, the user must install python version 3.9.15 with all required packages.
 
